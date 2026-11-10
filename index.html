@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Plan a Risenholm scar-touched loadout, explore slot-specific properties, and check Power, Capacity and gear modifiers.">
+  <title>Scars of Risenholm | Gear Planner</title>
+  <meta name="theme-color" content="#101524">
+  <link rel="icon" type="image/svg+xml" href="risenholm-icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="#" data-view="planner" aria-label="Scars of Risenholm Gear Planner"><img class="brand-icon" src="risenholm-icon.svg" width="36" height="36" alt=""><span>Scars of Risenholm<small>Gear Planner</small></span></a><nav aria-label="Main navigation"><button data-view="planner" class="nav active">Planner</button><button data-view="overview" class="nav">All gear</button><button data-view="catalog" class="nav">Property library</button><button data-view="rules" class="nav">How it works</button></nav><a class="wiki-link" href="https://wiki.risenholm.com/index.php/Equipment_and_Itemization" target="_blank" rel="noreferrer">Wiki ↗</a></header>
+  <main id="app"><div class="loading">Opening the workshop…</div></main>
+  <dialog id="picker" aria-labelledby="picker-title"></dialog>
+  <dialog id="manage" aria-labelledby="manage-title"></dialog>
+  <input type="file" id="portrait-file" accept="image/jpeg,image/png,image/webp" hidden>
+  <input type="file" id="import-file" accept="application/json,.json,image/png,.png" hidden>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body></html>

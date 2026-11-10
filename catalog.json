@@ -1,0 +1,2730 @@
+{
+  "source": {
+    "url": "https://wiki.risenholm.com/index.php/Equipment_and_Itemization",
+    "revision": "1786",
+    "lastModified": "2026-11-02",
+    "skillsUrl": "https://wiki.risenholm.com/index.php/Skills",
+    "skillsRevision": "1756"
+  },
+  "checkedAt": "2026-11-07",
+  "slotAliases": {
+    "helm": "head",
+    "helmet": "head",
+    "bracer": "arms",
+    "bracers": "arms",
+    "armor": "chest",
+    "amulet": "neck"
+  },
+  "core": {
+    "weapon": [
+      "Enhancement"
+    ],
+    "other": [
+      "AC",
+      "Strength",
+      "Dexterity",
+      "Constitution",
+      "Intelligence",
+      "Wisdom",
+      "Charisma"
+    ],
+    "powerPerPoint": 10,
+    "maxBonus": 5
+  },
+  "properties": [
+    {
+      "id": "skill",
+      "label": "Skill Bonus",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt"
+      ],
+      "repeat": "subtype",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 1,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "+2",
+          "value": 2,
+          "capacity": 2,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "+3",
+          "value": 3,
+          "capacity": 3,
+          "minPower": 20,
+          "rarity": 1
+        }
+      ],
+      "subtypes": [
+        {
+          "id": "alchemy",
+          "label": "Alchemy"
+        },
+        {
+          "id": "arcana",
+          "label": "Arcana"
+        },
+        {
+          "id": "athletics",
+          "label": "Athletics"
+        },
+        {
+          "id": "coercion",
+          "label": "Coercion"
+        },
+        {
+          "id": "deception",
+          "label": "Deception"
+        },
+        {
+          "id": "diplomacy",
+          "label": "Diplomacy"
+        },
+        {
+          "id": "insight",
+          "label": "Insight"
+        },
+        {
+          "id": "investigation",
+          "label": "Investigation"
+        },
+        {
+          "id": "knowledge",
+          "label": "Knowledge"
+        },
+        {
+          "id": "medicine",
+          "label": "Medicine"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        },
+        {
+          "id": "perception",
+          "label": "Perception"
+        },
+        {
+          "id": "performance",
+          "label": "Performance"
+        },
+        {
+          "id": "religion",
+          "label": "Religion"
+        },
+        {
+          "id": "stealth",
+          "label": "Stealth"
+        },
+        {
+          "id": "survival",
+          "label": "Survival"
+        },
+        {
+          "id": "tinkering",
+          "label": "Tinkering"
+        }
+      ],
+      "kind": "skill"
+    },
+    {
+      "id": "specific_save",
+      "label": "Saves vs Specific",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "neck",
+        "belt"
+      ],
+      "repeat": "subtype",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 1,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "+2",
+          "value": 2,
+          "capacity": 2,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "+3",
+          "value": 3,
+          "capacity": 3,
+          "minPower": 20,
+          "rarity": 1
+        }
+      ],
+      "subtypes": [
+        {
+          "id": "mind_affecting",
+          "label": "Mind Affecting",
+          "slots": [
+            "head"
+          ]
+        },
+        {
+          "id": "psychic",
+          "label": "Psychic",
+          "slots": [
+            "head"
+          ]
+        },
+        {
+          "id": "necrotic",
+          "label": "Necrotic",
+          "slots": [
+            "chest"
+          ]
+        },
+        {
+          "id": "sonic",
+          "label": "Sonic",
+          "slots": [
+            "chest"
+          ]
+        },
+        {
+          "id": "force",
+          "label": "Force",
+          "slots": [
+            "boots"
+          ]
+        },
+        {
+          "id": "lightning",
+          "label": "Lightning",
+          "slots": [
+            "boots"
+          ]
+        },
+        {
+          "id": "acid",
+          "label": "Acid",
+          "slots": [
+            "arms"
+          ]
+        },
+        {
+          "id": "cold",
+          "label": "Cold",
+          "slots": [
+            "cloak"
+          ]
+        },
+        {
+          "id": "fire",
+          "label": "Fire",
+          "slots": [
+            "cloak"
+          ]
+        },
+        {
+          "id": "fear",
+          "label": "Fear",
+          "slots": [
+            "neck"
+          ]
+        },
+        {
+          "id": "radiant",
+          "label": "Radiant",
+          "slots": [
+            "neck"
+          ]
+        },
+        {
+          "id": "disease",
+          "label": "Disease",
+          "slots": [
+            "belt"
+          ]
+        },
+        {
+          "id": "poison",
+          "label": "Poison",
+          "slots": [
+            "belt"
+          ]
+        }
+      ],
+      "kind": "save"
+    },
+    {
+      "id": "general_save",
+      "label": "General Saves",
+      "slots": [
+        "head",
+        "chest",
+        "cloak"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 7,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "+2",
+          "value": 2,
+          "capacity": 12,
+          "minPower": 20,
+          "rarity": 1
+        }
+      ],
+      "subtypes": [
+        {
+          "id": "will",
+          "label": "Will",
+          "slots": [
+            "head"
+          ]
+        },
+        {
+          "id": "fortitude",
+          "label": "Fortitude",
+          "slots": [
+            "chest"
+          ]
+        },
+        {
+          "id": "reflex",
+          "label": "Reflex",
+          "slots": [
+            "cloak"
+          ]
+        }
+      ],
+      "kind": "save"
+    },
+    {
+      "id": "ability",
+      "label": "Ability Score",
+      "slots": [
+        "ring",
+        "neck"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 10,
+          "minPower": 1,
+          "rarity": 1
+        }
+      ],
+      "subtypes": [
+        {
+          "id": "strength",
+          "label": "Strength"
+        },
+        {
+          "id": "dexterity",
+          "label": "Dexterity"
+        },
+        {
+          "id": "constitution",
+          "label": "Constitution"
+        },
+        {
+          "id": "intelligence",
+          "label": "Intelligence"
+        },
+        {
+          "id": "wisdom",
+          "label": "Wisdom"
+        },
+        {
+          "id": "charisma",
+          "label": "Charisma"
+        }
+      ],
+      "kind": "ability"
+    },
+    {
+      "id": "hp",
+      "label": "Bonus HP",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "belt"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "½ HD",
+          "value": 0.5,
+          "capacity": 4,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "1 HD",
+          "value": 1,
+          "capacity": 8,
+          "minPower": 20,
+          "rarity": 1
+        },
+        {
+          "label": "1½ HD",
+          "value": 1.5,
+          "capacity": 12,
+          "minPower": 40,
+          "rarity": 1
+        }
+      ],
+      "kind": "hp_hd"
+    },
+    {
+      "id": "stability",
+      "label": "Stability",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 2,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "+2",
+          "value": 2,
+          "capacity": 4,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "+3",
+          "value": 3,
+          "capacity": 6,
+          "minPower": 20,
+          "rarity": 1
+        }
+      ],
+      "kind": "flat"
+    },
+    {
+      "id": "immunity",
+      "label": "Damage Immunity",
+      "slots": [
+        "head",
+        "chest",
+        "cloak"
+      ],
+      "repeat": "subtype",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": 5,
+          "capacity": 4,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 8,
+          "minPower": 20,
+          "rarity": 1
+        }
+      ],
+      "subtypes": [
+        {
+          "id": "psychic",
+          "label": "Psychic",
+          "slots": [
+            "head"
+          ]
+        },
+        {
+          "id": "radiant",
+          "label": "Radiant",
+          "slots": [
+            "head"
+          ]
+        },
+        {
+          "id": "sonic",
+          "label": "Sonic",
+          "slots": [
+            "head"
+          ]
+        },
+        {
+          "id": "acid",
+          "label": "Acid",
+          "slots": [
+            "chest"
+          ]
+        },
+        {
+          "id": "force",
+          "label": "Force",
+          "slots": [
+            "chest"
+          ]
+        },
+        {
+          "id": "lightning",
+          "label": "Lightning",
+          "slots": [
+            "chest"
+          ]
+        },
+        {
+          "id": "cold",
+          "label": "Cold",
+          "slots": [
+            "cloak"
+          ]
+        },
+        {
+          "id": "fire",
+          "label": "Fire",
+          "slots": [
+            "cloak"
+          ]
+        },
+        {
+          "id": "necrotic",
+          "label": "Necrotic",
+          "slots": [
+            "cloak"
+          ]
+        }
+      ],
+      "kind": "percent"
+    },
+    {
+      "id": "dr_threshold",
+      "label": "DR Threshold",
+      "slots": [
+        "head",
+        "chest",
+        "neck",
+        "belt"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 6,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "15%",
+          "value": 15,
+          "capacity": 13,
+          "minPower": 30,
+          "rarity": 1
+        },
+        {
+          "label": "20%",
+          "value": 20,
+          "capacity": 20,
+          "minPower": 50,
+          "rarity": 1
+        }
+      ],
+      "kind": "percent"
+    },
+    {
+      "id": "stamina",
+      "label": "Stamina",
+      "slots": [
+        "chest",
+        "boots",
+        "belt"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 10,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "15%",
+          "value": 15,
+          "capacity": 20,
+          "minPower": 30,
+          "rarity": 1
+        },
+        {
+          "label": "20%",
+          "value": 20,
+          "capacity": 30,
+          "minPower": 50,
+          "rarity": 1
+        }
+      ],
+      "kind": "percent"
+    },
+    {
+      "id": "dash",
+      "label": "Dash Speed",
+      "slots": [
+        "boots",
+        "cloak"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": 5,
+          "capacity": 10,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 20,
+          "minPower": 30,
+          "rarity": 1
+        }
+      ],
+      "kind": "percent"
+    },
+    {
+      "id": "weight",
+      "label": "Weight Reduction",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "80%",
+          "value": 80,
+          "capacity": 2,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "60%",
+          "value": 60,
+          "capacity": 4,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "40%",
+          "value": 40,
+          "capacity": 6,
+          "minPower": 20,
+          "rarity": 1
+        },
+        {
+          "label": "20%",
+          "value": 20,
+          "capacity": 8,
+          "minPower": 30,
+          "rarity": 1
+        }
+      ],
+      "kind": "weight_percent",
+      "notes": "Ranks are recorded exactly as the wiki labels them; no derived carry-weight calculation is assumed."
+    },
+    {
+      "id": "resource",
+      "label": "Class Resource Capacity",
+      "slots": [
+        "chest",
+        "neck",
+        "belt"
+      ],
+      "repeat": "subtype",
+      "ranks": [
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 14,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "15%",
+          "value": 15,
+          "capacity": 28,
+          "minPower": 30,
+          "rarity": 1
+        },
+        {
+          "label": "20%",
+          "value": 20,
+          "capacity": 42,
+          "minPower": 50,
+          "rarity": 1
+        }
+      ],
+      "freeSubtype": true,
+      "kind": "percent",
+      "notes": "The itemization page does not enumerate the available resource subtypes. Enter the resource name from the in-game item."
+    },
+    {
+      "id": "generation",
+      "label": "Generation",
+      "slots": [
+        "arms",
+        "ring",
+        "neck"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 15,
+          "minPower": 15,
+          "rarity": 1
+        },
+        {
+          "label": "15%",
+          "value": 15,
+          "capacity": 30,
+          "minPower": 40,
+          "rarity": 1
+        }
+      ],
+      "subtypes": [
+        {
+          "id": "healing",
+          "label": "Healing"
+        },
+        {
+          "id": "temporary_hp",
+          "label": "Temporary HP"
+        },
+        {
+          "id": "dr_absorption",
+          "label": "DR Absorption"
+        }
+      ],
+      "kind": "percent"
+    },
+    {
+      "id": "wellwater",
+      "label": "Well Water Charges",
+      "slots": [
+        "chest",
+        "belt"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 15,
+          "minPower": 15,
+          "rarity": 1
+        },
+        {
+          "label": "+2",
+          "value": 2,
+          "capacity": 30,
+          "minPower": 45,
+          "rarity": 1
+        }
+      ],
+      "kind": "flat"
+    },
+    {
+      "id": "maneuvers",
+      "label": "Extra Maneuvers",
+      "slots": [
+        "boots",
+        "arms",
+        "ring",
+        "neck",
+        "belt"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 4,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "+2",
+          "value": 2,
+          "capacity": 8,
+          "minPower": 20,
+          "rarity": 1
+        },
+        {
+          "label": "+3",
+          "value": 3,
+          "capacity": 12,
+          "minPower": 40,
+          "rarity": 1
+        }
+      ],
+      "kind": "flat"
+    },
+    {
+      "id": "metamagic",
+      "label": "Extra Metamagic",
+      "slots": [
+        "boots",
+        "arms",
+        "ring",
+        "neck",
+        "belt"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 4,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "+2",
+          "value": 2,
+          "capacity": 8,
+          "minPower": 20,
+          "rarity": 1
+        },
+        {
+          "label": "+3",
+          "value": 3,
+          "capacity": 12,
+          "minPower": 40,
+          "rarity": 1
+        }
+      ],
+      "kind": "flat"
+    },
+    {
+      "id": "maneuver_dc",
+      "label": "Maneuver DC",
+      "slots": [
+        "boots",
+        "arms",
+        "ring",
+        "neck",
+        "belt"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 10,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "+2",
+          "value": 2,
+          "capacity": 16,
+          "minPower": 20,
+          "rarity": 1
+        },
+        {
+          "label": "+3",
+          "value": 3,
+          "capacity": 21,
+          "minPower": 40,
+          "rarity": 1
+        }
+      ],
+      "kind": "dc",
+      "cap": 5
+    },
+    {
+      "id": "spell_dc",
+      "label": "Spell DC",
+      "slots": [
+        "boots",
+        "arms",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 10,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "+2",
+          "value": 2,
+          "capacity": 16,
+          "minPower": 20,
+          "rarity": 1
+        },
+        {
+          "label": "+3",
+          "value": 3,
+          "capacity": 21,
+          "minPower": 40,
+          "rarity": 1
+        }
+      ],
+      "kind": "dc",
+      "cap": 5,
+      "weaponKinds": [
+        "mystic"
+      ]
+    },
+    {
+      "id": "gadget_dc",
+      "label": "Gadget DC",
+      "slots": [
+        "boots",
+        "arms",
+        "ring",
+        "neck",
+        "belt"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 10,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "+2",
+          "value": 2,
+          "capacity": 16,
+          "minPower": 20,
+          "rarity": 1
+        },
+        {
+          "label": "+3",
+          "value": 3,
+          "capacity": 21,
+          "minPower": 40,
+          "rarity": 1
+        }
+      ],
+      "kind": "dc",
+      "cap": 5
+    },
+    {
+      "id": "spell_slot",
+      "label": "Bonus Spell Slot",
+      "slots": [
+        "boots",
+        "arms",
+        "ring",
+        "neck",
+        "belt"
+      ],
+      "repeat": "subtype_rank",
+      "ranks": [
+        {
+          "label": "L1",
+          "value": 1,
+          "capacity": 6,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "L2",
+          "value": 2,
+          "capacity": 12,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "L3",
+          "value": 3,
+          "capacity": 18,
+          "minPower": 20,
+          "rarity": 1
+        },
+        {
+          "label": "L4",
+          "value": 4,
+          "capacity": 24,
+          "minPower": 30,
+          "rarity": 1
+        },
+        {
+          "label": "L5",
+          "value": 5,
+          "capacity": 30,
+          "minPower": 40,
+          "rarity": 1
+        }
+      ],
+      "subtypes": [
+        {
+          "id": "bard",
+          "label": "Bard"
+        },
+        {
+          "id": "cleric",
+          "label": "Cleric"
+        },
+        {
+          "id": "druid",
+          "label": "Druid"
+        },
+        {
+          "id": "sorcerer",
+          "label": "Sorcerer"
+        },
+        {
+          "id": "wizard",
+          "label": "Wizard"
+        },
+        {
+          "id": "paladin",
+          "label": "Paladin"
+        },
+        {
+          "id": "ranger",
+          "label": "Ranger"
+        }
+      ],
+      "kind": "spell_slot",
+      "subtypeRankRules": {
+        "paladin": {
+          "maxRank": 3,
+          "minPowers": [
+            1,
+            20,
+            40
+          ]
+        },
+        "ranger": {
+          "maxRank": 3,
+          "minPowers": [
+            1,
+            20,
+            40
+          ]
+        }
+      },
+      "notes": "One slot bonus per class and spell level. Paladin and Ranger stop at level 3 and use minimum Powers 1, 20, 40."
+    },
+    {
+      "id": "cast_spell",
+      "label": "Cast Spell",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "subtype",
+      "ranks": [
+        {
+          "label": "L1",
+          "value": 1,
+          "capacity": 6,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "L2",
+          "value": 2,
+          "capacity": 12,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "L3",
+          "value": 3,
+          "capacity": 18,
+          "minPower": 20,
+          "rarity": 1
+        }
+      ],
+      "freeSubtype": true,
+      "kind": "spell",
+      "unverifiedSlots": true,
+      "notes": "The wiki does not list spells or their item-slot mapping. Spell name and slot compatibility must be checked in game; this entry is a planning placeholder."
+    },
+    {
+      "id": "charges",
+      "label": "Increased Charges",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+1",
+          "value": 1,
+          "capacity": 2,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "+2",
+          "value": 2,
+          "capacity": 4,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "+3",
+          "value": 3,
+          "capacity": 6,
+          "minPower": 20,
+          "rarity": 1
+        },
+        {
+          "label": "+4",
+          "value": 4,
+          "capacity": 8,
+          "minPower": 40,
+          "rarity": 1
+        }
+      ],
+      "kind": "flat",
+      "requiresSpell": true
+    },
+    {
+      "id": "rune",
+      "label": "Rune Damage",
+      "slots": [
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "1d8",
+          "value": 8,
+          "capacity": 3,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "1d10",
+          "value": 10,
+          "capacity": 6,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "1d12",
+          "value": 12,
+          "capacity": 9,
+          "minPower": 20,
+          "rarity": 1
+        }
+      ],
+      "kind": "dice",
+      "weaponKinds": [
+        "melee",
+        "mystic"
+      ]
+    },
+    {
+      "id": "oil",
+      "label": "Oil Damage",
+      "slots": [
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "1d6",
+          "value": 6,
+          "capacity": 2,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "1d8",
+          "value": 8,
+          "capacity": 4,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "1d10",
+          "value": 10,
+          "capacity": 6,
+          "minPower": 20,
+          "rarity": 1
+        }
+      ],
+      "kind": "dice",
+      "weaponKinds": [
+        "melee"
+      ]
+    },
+    {
+      "id": "massive_crit",
+      "label": "Massive Criticals",
+      "slots": [
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "1d10",
+          "value": 1,
+          "capacity": 8,
+          "minPower": 1,
+          "rarity": 1
+        },
+        {
+          "label": "2d10",
+          "value": 2,
+          "capacity": 10,
+          "minPower": 10,
+          "rarity": 1
+        }
+      ],
+      "kind": "dice",
+      "weaponKinds": [
+        "melee"
+      ]
+    },
+    {
+      "id": "sneak",
+      "label": "Sneak Attack",
+      "slots": [
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+1d6",
+          "value": 1,
+          "capacity": 10,
+          "minPower": 1,
+          "rarity": 1
+        }
+      ],
+      "kind": "dice",
+      "weaponKinds": [
+        "melee"
+      ]
+    },
+    {
+      "id": "damage_attacks",
+      "label": "Damage: Attacks",
+      "slots": [
+        "arms",
+        "ring",
+        "weapon"
+      ],
+      "repeat": "unspecified",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": 5,
+          "capacity": 30,
+          "minPower": 15,
+          "rarity": 3
+        },
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 40,
+          "minPower": 35,
+          "rarity": 3
+        }
+      ],
+      "kind": "percent",
+      "weaponKinds": [
+        "melee"
+      ],
+      "group": "damage_bonus",
+      "notes": "The wiki does not specify a separate repeat rule for percentage damage bonus lines."
+    },
+    {
+      "id": "damage_spells",
+      "label": "Damage: Spells",
+      "slots": [
+        "arms",
+        "ring",
+        "weapon"
+      ],
+      "repeat": "unspecified",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": 5,
+          "capacity": 30,
+          "minPower": 15,
+          "rarity": 3
+        },
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 40,
+          "minPower": 35,
+          "rarity": 3
+        }
+      ],
+      "kind": "percent",
+      "weaponKinds": [
+        "melee",
+        "mystic"
+      ],
+      "group": "damage_bonus",
+      "notes": "The wiki does not specify a separate repeat rule for percentage damage bonus lines."
+    },
+    {
+      "id": "damage_all",
+      "label": "Damage: All",
+      "slots": [
+        "arms",
+        "ring",
+        "weapon"
+      ],
+      "repeat": "unspecified",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": 5,
+          "capacity": 40,
+          "minPower": 15,
+          "rarity": 3
+        },
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 50,
+          "minPower": 35,
+          "rarity": 3
+        }
+      ],
+      "kind": "percent",
+      "weaponKinds": [
+        "melee",
+        "mystic"
+      ],
+      "group": "damage_bonus",
+      "notes": "The wiki does not specify a separate repeat rule for percentage damage bonus lines."
+    },
+    {
+      "id": "damage_gadgets",
+      "label": "Damage: Gadgets",
+      "slots": [
+        "arms",
+        "ring",
+        "weapon"
+      ],
+      "repeat": "unspecified",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": 5,
+          "capacity": 30,
+          "minPower": 15,
+          "rarity": 3
+        },
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 40,
+          "minPower": 35,
+          "rarity": 3
+        }
+      ],
+      "kind": "percent",
+      "weaponKinds": [
+        "melee"
+      ],
+      "group": "damage_bonus",
+      "notes": "The wiki does not specify a separate repeat rule for percentage damage bonus lines."
+    },
+    {
+      "id": "damage_associates",
+      "label": "Damage: Associates",
+      "slots": [
+        "arms",
+        "ring",
+        "weapon"
+      ],
+      "repeat": "unspecified",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": 5,
+          "capacity": 30,
+          "minPower": 15,
+          "rarity": 3
+        },
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 40,
+          "minPower": 35,
+          "rarity": 3
+        }
+      ],
+      "kind": "percent",
+      "weaponKinds": [
+        "melee",
+        "mystic"
+      ],
+      "group": "damage_bonus",
+      "notes": "The wiki does not specify a separate repeat rule for percentage damage bonus lines."
+    },
+    {
+      "id": "damage_aoe",
+      "label": "Damage: Spells (AoE)",
+      "slots": [
+        "arms",
+        "ring",
+        "weapon"
+      ],
+      "repeat": "unspecified",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": 5,
+          "capacity": 15,
+          "minPower": 15,
+          "rarity": 2
+        },
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 30,
+          "minPower": 40,
+          "rarity": 2
+        }
+      ],
+      "kind": "percent",
+      "weaponKinds": [
+        "melee",
+        "mystic"
+      ],
+      "group": "damage_bonus",
+      "notes": "The wiki does not specify a separate repeat rule for percentage damage bonus lines."
+    },
+    {
+      "id": "damage_persistent_aoe",
+      "label": "Damage: Spells (Persistent AoE)",
+      "slots": [
+        "arms",
+        "ring",
+        "weapon"
+      ],
+      "repeat": "unspecified",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": 5,
+          "capacity": 15,
+          "minPower": 15,
+          "rarity": 2
+        },
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 30,
+          "minPower": 40,
+          "rarity": 2
+        }
+      ],
+      "kind": "percent",
+      "weaponKinds": [
+        "melee",
+        "mystic"
+      ],
+      "group": "damage_bonus",
+      "notes": "The wiki does not specify a separate repeat rule for percentage damage bonus lines."
+    },
+    {
+      "id": "damage_single_target",
+      "label": "Damage: Spells (Single Target)",
+      "slots": [
+        "arms",
+        "ring",
+        "weapon"
+      ],
+      "repeat": "unspecified",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": 5,
+          "capacity": 15,
+          "minPower": 15,
+          "rarity": 2
+        },
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 30,
+          "minPower": 40,
+          "rarity": 2
+        }
+      ],
+      "kind": "percent",
+      "weaponKinds": [
+        "melee",
+        "mystic"
+      ],
+      "group": "damage_bonus",
+      "notes": "The wiki does not specify a separate repeat rule for percentage damage bonus lines."
+    },
+    {
+      "id": "damage_retaliation",
+      "label": "Damage: Retaliation",
+      "slots": [
+        "arms",
+        "ring",
+        "weapon"
+      ],
+      "repeat": "unspecified",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": 5,
+          "capacity": 15,
+          "minPower": 15,
+          "rarity": 2
+        },
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 30,
+          "minPower": 40,
+          "rarity": 2
+        }
+      ],
+      "kind": "percent",
+      "weaponKinds": [
+        "melee"
+      ],
+      "group": "damage_bonus",
+      "notes": "The wiki does not specify a separate repeat rule for percentage damage bonus lines."
+    },
+    {
+      "id": "damage_cleave",
+      "label": "Damage: Cleave Attacks",
+      "slots": [
+        "arms",
+        "ring",
+        "weapon"
+      ],
+      "repeat": "unspecified",
+      "ranks": [
+        {
+          "label": "10%",
+          "value": 10,
+          "capacity": 5,
+          "minPower": 10,
+          "rarity": 1
+        },
+        {
+          "label": "15%",
+          "value": 15,
+          "capacity": 10,
+          "minPower": 30,
+          "rarity": 1
+        },
+        {
+          "label": "20%",
+          "value": 20,
+          "capacity": 15,
+          "minPower": 50,
+          "rarity": 1
+        }
+      ],
+      "kind": "percent",
+      "weaponKinds": [
+        "melee"
+      ],
+      "group": "damage_bonus",
+      "notes": "The wiki does not specify a separate repeat rule for percentage damage bonus lines."
+    }
+  ],
+  "disrupted": [
+    {
+      "id": "increase_weight",
+      "label": "Increase Weight",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "+5 lbs",
+          "value": 5,
+          "minDisruption": 1
+        },
+        {
+          "label": "+10 lbs",
+          "value": 10,
+          "minDisruption": 10
+        },
+        {
+          "label": "+15 lbs",
+          "value": 15,
+          "minDisruption": 15
+        }
+      ],
+      "kind": "weight"
+    },
+    {
+      "id": "skill_penalty",
+      "label": "Skill Penalty",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt"
+      ],
+      "repeat": "subtype",
+      "ranks": [
+        {
+          "label": "−2",
+          "value": -2,
+          "minDisruption": 1
+        },
+        {
+          "label": "−4",
+          "value": -4,
+          "minDisruption": 10
+        },
+        {
+          "label": "−6",
+          "value": -6,
+          "minDisruption": 15
+        }
+      ],
+      "subtypes": [
+        {
+          "id": "alchemy",
+          "label": "Alchemy"
+        },
+        {
+          "id": "arcana",
+          "label": "Arcana"
+        },
+        {
+          "id": "athletics",
+          "label": "Athletics"
+        },
+        {
+          "id": "coercion",
+          "label": "Coercion"
+        },
+        {
+          "id": "deception",
+          "label": "Deception"
+        },
+        {
+          "id": "diplomacy",
+          "label": "Diplomacy"
+        },
+        {
+          "id": "insight",
+          "label": "Insight"
+        },
+        {
+          "id": "investigation",
+          "label": "Investigation"
+        },
+        {
+          "id": "knowledge",
+          "label": "Knowledge"
+        },
+        {
+          "id": "medicine",
+          "label": "Medicine"
+        },
+        {
+          "id": "nature",
+          "label": "Nature"
+        },
+        {
+          "id": "perception",
+          "label": "Perception"
+        },
+        {
+          "id": "performance",
+          "label": "Performance"
+        },
+        {
+          "id": "religion",
+          "label": "Religion"
+        },
+        {
+          "id": "stealth",
+          "label": "Stealth"
+        },
+        {
+          "id": "survival",
+          "label": "Survival"
+        },
+        {
+          "id": "tinkering",
+          "label": "Tinkering"
+        }
+      ],
+      "kind": "skill",
+      "affects": "skill"
+    },
+    {
+      "id": "specific_save_penalty",
+      "label": "Saves vs Specific Penalty",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "subtype",
+      "ranks": [
+        {
+          "label": "−2",
+          "value": -2,
+          "minDisruption": 1
+        },
+        {
+          "label": "−4",
+          "value": -4,
+          "minDisruption": 10
+        },
+        {
+          "label": "−6",
+          "value": -6,
+          "minDisruption": 15
+        }
+      ],
+      "subtypes": [
+        {
+          "id": "mind_affecting",
+          "label": "Mind Affecting"
+        },
+        {
+          "id": "psychic",
+          "label": "Psychic"
+        },
+        {
+          "id": "necrotic",
+          "label": "Necrotic"
+        },
+        {
+          "id": "sonic",
+          "label": "Sonic"
+        },
+        {
+          "id": "force",
+          "label": "Force"
+        },
+        {
+          "id": "lightning",
+          "label": "Lightning"
+        },
+        {
+          "id": "acid",
+          "label": "Acid"
+        },
+        {
+          "id": "cold",
+          "label": "Cold"
+        },
+        {
+          "id": "fire",
+          "label": "Fire"
+        },
+        {
+          "id": "fear",
+          "label": "Fear"
+        },
+        {
+          "id": "radiant",
+          "label": "Radiant"
+        },
+        {
+          "id": "disease",
+          "label": "Disease"
+        },
+        {
+          "id": "poison",
+          "label": "Poison"
+        }
+      ],
+      "kind": "save",
+      "affects": "specific_save"
+    },
+    {
+      "id": "general_save_penalty",
+      "label": "General Save Penalty",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "subtype",
+      "ranks": [
+        {
+          "label": "−1",
+          "value": -1,
+          "minDisruption": 1
+        },
+        {
+          "label": "−2",
+          "value": -2,
+          "minDisruption": 10
+        },
+        {
+          "label": "−3",
+          "value": -3,
+          "minDisruption": 15
+        }
+      ],
+      "subtypes": [
+        {
+          "id": "fortitude",
+          "label": "Fortitude"
+        },
+        {
+          "id": "reflex",
+          "label": "Reflex"
+        },
+        {
+          "id": "will",
+          "label": "Will"
+        }
+      ],
+      "kind": "save",
+      "affects": "general_save"
+    },
+    {
+      "id": "vulnerability",
+      "label": "Damage Vulnerability",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "subtype",
+      "ranks": [
+        {
+          "label": "5%",
+          "value": -5,
+          "minDisruption": 10
+        },
+        {
+          "label": "10%",
+          "value": -10,
+          "minDisruption": 15
+        }
+      ],
+      "subtypes": [
+        {
+          "id": "bludgeoning",
+          "label": "Bludgeoning"
+        },
+        {
+          "id": "piercing",
+          "label": "Piercing"
+        },
+        {
+          "id": "slashing",
+          "label": "Slashing"
+        },
+        {
+          "id": "acid",
+          "label": "Acid"
+        },
+        {
+          "id": "cold",
+          "label": "Cold"
+        },
+        {
+          "id": "fire",
+          "label": "Fire"
+        },
+        {
+          "id": "force",
+          "label": "Force"
+        },
+        {
+          "id": "lightning",
+          "label": "Lightning"
+        },
+        {
+          "id": "necrotic",
+          "label": "Necrotic"
+        },
+        {
+          "id": "psychic",
+          "label": "Psychic"
+        },
+        {
+          "id": "radiant",
+          "label": "Radiant"
+        },
+        {
+          "id": "sonic",
+          "label": "Sonic"
+        }
+      ],
+      "kind": "percent",
+      "affects": "immunity",
+      "notes": "The page allows any damage type but does not enumerate the vulnerability subtypes. Physical and energy types are shown for planning; check availability in game."
+    },
+    {
+      "id": "reduced_hp",
+      "label": "Reduced HP",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "½ HD",
+          "value": -0.5,
+          "minDisruption": 10
+        },
+        {
+          "label": "1 HD",
+          "value": -1,
+          "minDisruption": 15
+        }
+      ],
+      "kind": "hp_hd",
+      "affects": "hp"
+    },
+    {
+      "id": "reduced_stability",
+      "label": "Reduced Stability",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "−1",
+          "value": -1,
+          "minDisruption": 1
+        },
+        {
+          "label": "−2",
+          "value": -2,
+          "minDisruption": 10
+        },
+        {
+          "label": "−3",
+          "value": -3,
+          "minDisruption": 15
+        }
+      ],
+      "kind": "flat",
+      "affects": "stability"
+    },
+    {
+      "id": "reduced_charges",
+      "label": "Reduced Charges",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "−1",
+          "value": -1,
+          "minDisruption": 1
+        },
+        {
+          "label": "−2",
+          "value": -2,
+          "minDisruption": 10
+        },
+        {
+          "label": "−3",
+          "value": -3,
+          "minDisruption": 15
+        }
+      ],
+      "kind": "flat",
+      "affects": "charges",
+      "requiresSpell": true
+    },
+    {
+      "id": "reduced_maneuvers",
+      "label": "Reduced Maneuvers",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "−1",
+          "value": -1,
+          "minDisruption": 10
+        }
+      ],
+      "kind": "flat",
+      "affects": "maneuvers"
+    },
+    {
+      "id": "reduced_metamagic",
+      "label": "Reduced Metamagic",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "−1",
+          "value": -1,
+          "minDisruption": 10
+        }
+      ],
+      "kind": "flat",
+      "affects": "metamagic"
+    },
+    {
+      "id": "reduced_maneuver_dc",
+      "label": "Reduced Maneuver DC",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "−1",
+          "value": -1,
+          "minDisruption": 10
+        }
+      ],
+      "kind": "dc",
+      "affects": "maneuver_dc"
+    },
+    {
+      "id": "reduced_spell_dc",
+      "label": "Reduced Spell DC",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "−1",
+          "value": -1,
+          "minDisruption": 10
+        }
+      ],
+      "kind": "dc",
+      "affects": "spell_dc"
+    },
+    {
+      "id": "reduced_gadget_dc",
+      "label": "Reduced Gadget DC",
+      "slots": [
+        "head",
+        "chest",
+        "boots",
+        "arms",
+        "cloak",
+        "ring",
+        "neck",
+        "belt",
+        "weapon"
+      ],
+      "repeat": "none",
+      "ranks": [
+        {
+          "label": "−1",
+          "value": -1,
+          "minDisruption": 10
+        }
+      ],
+      "kind": "dc",
+      "affects": "gadget_dc"
+    }
+  ],
+  "armor": [
+    {
+      "id": "unarmored",
+      "name": "Unarmored",
+      "baseAC": 0,
+      "maxDex": 10,
+      "checkPenalty": 0,
+      "weight": 1
+    },
+    {
+      "id": "padded_armor",
+      "name": "Padded Armor",
+      "baseAC": 1,
+      "maxDex": 9,
+      "checkPenalty": -1,
+      "weight": 5
+    },
+    {
+      "id": "leather_armor",
+      "name": "Leather Armor",
+      "baseAC": 2,
+      "maxDex": 8,
+      "checkPenalty": -2,
+      "weight": 10
+    },
+    {
+      "id": "studded_leather_armor",
+      "name": "Studded Leather Armor",
+      "baseAC": 3,
+      "maxDex": 7,
+      "checkPenalty": -3,
+      "weight": 15
+    },
+    {
+      "id": "chain_shirt",
+      "name": "Chain Shirt",
+      "baseAC": 4,
+      "maxDex": 6,
+      "checkPenalty": -4,
+      "weight": 20
+    },
+    {
+      "id": "chainmail_coat",
+      "name": "Chainmail Coat",
+      "baseAC": 5,
+      "maxDex": 5,
+      "checkPenalty": -5,
+      "weight": 25
+    },
+    {
+      "id": "breastplate",
+      "name": "Breastplate",
+      "baseAC": 6,
+      "maxDex": 4,
+      "checkPenalty": -6,
+      "weight": 30
+    },
+    {
+      "id": "splintmail_coat",
+      "name": "Splintmail Coat",
+      "baseAC": 7,
+      "maxDex": 3,
+      "checkPenalty": -7,
+      "weight": 35
+    },
+    {
+      "id": "half_plate",
+      "name": "Half Plate",
+      "baseAC": 8,
+      "maxDex": 2,
+      "checkPenalty": -8,
+      "weight": 40
+    },
+    {
+      "id": "full_plate",
+      "name": "Full Plate",
+      "baseAC": 9,
+      "maxDex": 1,
+      "checkPenalty": -9,
+      "weight": 45
+    }
+  ],
+  "weapons": [
+    {
+      "id": "dagger",
+      "name": "Dagger",
+      "damage": "1d6",
+      "damageType": "Piercing",
+      "size": "Tiny",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "simple",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "handaxe",
+      "name": "Handaxe",
+      "damage": "1d6",
+      "damageType": "Slashing",
+      "size": "Small",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "simple",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "kama",
+      "name": "Kama",
+      "damage": "1d6",
+      "damageType": "Slashing",
+      "size": "Small",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "simple",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "mace",
+      "name": "Mace",
+      "damage": "1d6",
+      "damageType": "Bludgeoning",
+      "size": "Small",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "simple",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "sickle",
+      "name": "Sickle",
+      "damage": "1d6",
+      "damageType": "Slashing",
+      "size": "Small",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "simple",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "club",
+      "name": "Club",
+      "damage": "1d6",
+      "damageType": "Bludgeoning",
+      "size": "Medium",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "simple",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "heavy_mace",
+      "name": "Heavy Mace",
+      "damage": "1d6",
+      "damageType": "Bludgeoning",
+      "size": "Medium",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "simple",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "quarterstaff",
+      "name": "Quarterstaff",
+      "damage": "1d8",
+      "damageType": "Bludgeoning",
+      "size": "Large",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "simple",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "spear",
+      "name": "Spear",
+      "damage": "1d8",
+      "damageType": "Piercing",
+      "size": "Large",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "simple",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "gauntlets",
+      "name": "Gauntlets",
+      "damage": "1d8",
+      "damageType": "Bludgeoning",
+      "size": "Small",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "unarmed",
+      "critical": "20/x2",
+      "notes": "Requires Improved Unarmed Strike"
+    },
+    {
+      "id": "great-gauntlets",
+      "name": "Great-Gauntlets",
+      "damage": "2d6",
+      "damageType": "Bludgeoning",
+      "size": "Large",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "unarmed",
+      "critical": "20/x2",
+      "notes": "Requires Improved Unarmed Strike"
+    },
+    {
+      "id": "kukri",
+      "name": "Kukri",
+      "damage": "1d8",
+      "damageType": "Slashing",
+      "size": "Tiny",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "shortsword",
+      "name": "Shortsword",
+      "damage": "1d8",
+      "damageType": "Piercing",
+      "size": "Small",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "light_hammer",
+      "name": "Light Hammer",
+      "damage": "1d8",
+      "damageType": "Bludgeoning",
+      "size": "Small",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "whip",
+      "name": "Whip",
+      "damage": "1d8",
+      "damageType": "Slashing",
+      "size": "Small",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "battleaxe",
+      "name": "Battleaxe",
+      "damage": "1d8",
+      "damageType": "Slashing",
+      "size": "Medium",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "light_flail",
+      "name": "Light Flail",
+      "damage": "1d8",
+      "damageType": "Bludgeoning",
+      "size": "Medium",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "longsword",
+      "name": "Longsword",
+      "damage": "1d8",
+      "damageType": "Slashing",
+      "size": "Medium",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "rapier",
+      "name": "Rapier",
+      "damage": "1d8",
+      "damageType": "Piercing",
+      "size": "Medium",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "scimitar",
+      "name": "Scimitar",
+      "damage": "1d8",
+      "damageType": "Slashing",
+      "size": "Medium",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "warhammer",
+      "name": "Warhammer",
+      "damage": "1d8",
+      "damageType": "Bludgeoning",
+      "size": "Medium",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "morningstar",
+      "name": "Morningstar",
+      "damage": "1d8",
+      "damageType": "Piercing",
+      "size": "Medium",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "bastard_sword",
+      "name": "Bastard Sword",
+      "damage": "1d8",
+      "damageType": "Slashing",
+      "size": "Medium",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "katana",
+      "name": "Katana",
+      "damage": "1d8",
+      "damageType": "Slashing",
+      "size": "Medium",
+      "finesse": true,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "dwarven_waraxe",
+      "name": "Dwarven Waraxe",
+      "damage": "1d8",
+      "damageType": "Slashing",
+      "size": "Medium",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "greataxe",
+      "name": "Greataxe",
+      "damage": "2d6",
+      "damageType": "Slashing",
+      "size": "Large",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "greatsword",
+      "name": "Greatsword",
+      "damage": "2d6",
+      "damageType": "Slashing",
+      "size": "Large",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "halberd",
+      "name": "Halberd",
+      "damage": "2d6",
+      "damageType": "Slashing",
+      "size": "Large",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "heavy_flail",
+      "name": "Heavy Flail",
+      "damage": "2d6",
+      "damageType": "Bludgeoning",
+      "size": "Large",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "maul",
+      "name": "Maul",
+      "damage": "2d6",
+      "damageType": "Bludgeoning",
+      "size": "Large",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "trident",
+      "name": "Trident",
+      "damage": "2d6",
+      "damageType": "Piercing",
+      "size": "Large",
+      "finesse": false,
+      "kind": "melee",
+      "proficiency": "martial",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "casting_gauntlet",
+      "name": "Casting Gauntlet",
+      "damage": "1d4",
+      "damageType": "Bludgeoning",
+      "size": "Small",
+      "finesse": true,
+      "kind": "mystic",
+      "proficiency": "mystic",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "tome",
+      "name": "Tome",
+      "damage": "1d4",
+      "damageType": "Bludgeoning",
+      "size": "Medium",
+      "finesse": false,
+      "kind": "mystic",
+      "proficiency": "mystic",
+      "critical": "20/x2",
+      "notes": ""
+    },
+    {
+      "id": "mystic_staff",
+      "name": "Mystic Staff",
+      "damage": "1d6",
+      "damageType": "Bludgeoning",
+      "size": "Medium",
+      "finesse": false,
+      "kind": "mystic",
+      "proficiency": "mystic",
+      "critical": "20/x2",
+      "notes": ""
+    }
+  ],
+  "rules": {
+    "intrinsicCount": [
+      1,
+      3
+    ],
+    "baseExtrinsicCount": [
+      1,
+      4
+    ],
+    "extraSlotCapacity": 10,
+    "coreUsesCapacity": false,
+    "disruptedCount": "0 when Disruption = 0; floor(1 + Disruption / 10) otherwise",
+    "capacity": "Power - Disruption - 10 * extraExtrinsicSlots",
+    "dcNetCap": 5,
+    "capstonePower": 50,
+    "capstoneAttackCap": 5,
+    "acTypes": {
+      "head": "Armour Enchantment",
+      "chest": "Armour Enchantment",
+      "ring": "Natural",
+      "neck": "Natural",
+      "arms": "Deflection",
+      "belt": "Deflection",
+      "boots": "Dodge",
+      "cloak": "Dodge"
+    },
+    "acStacking": "Only the highest equipment or spell AC bonus of each type applies.",
+    "notes": [
+      "Intrinsics cannot be changed or removed in game; planner choices describe desired loot.",
+      "The current page does not document a separate intrinsic family list or item feats.",
+      "Intrinsic rank selection/capacity wording is ambiguous: Slots says highest Power-qualified rank; Selection Logic says highest affordable rank and describes rank cost deductions.",
+      "Skill totals can also be limited by invested ranks; this catalog describes item contributions only.",
+      "Non-generation Disruption changes can exceed the fresh-drop two-thirds-of-Power restriction.",
+      "Positive ranks requiring Power above 50 are omitted from the playable catalog."
+    ],
+    "powerCap": 50,
+    "powerCapSource": "Server Power cap is 50."
+  }
+}
