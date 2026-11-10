@@ -4,3 +4,4 @@
 - Save multiple loadouts in your browser and give each one a portrait.
 - Import and export builds as PNG or JSON.
 - Pull gear updates from the Risenholm wiki and use a local catalog if the wiki is down.
+- Works on desktop and mobile browsers.
